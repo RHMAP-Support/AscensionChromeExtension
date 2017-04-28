@@ -1,0 +1,34 @@
+{
+  "name": "AscensionOpen",
+  "version": "1.0",
+  "description": "Open case in Ascension",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "commands": {
+    "_execute_page_action": {
+        "suggested_key": {
+          "default": "Ctrl+Shift+A",
+          "windows": "Alt+Shift+A",
+          "mac": "Command+Shift+A"
+        }
+      }    
+  },
+  "page_action" :
+  {
+    "default_icon" : "LetterA-19.png",
+    "default_title" : "Open case in Ascension"
+  },
+  "permissions" : [
+    "declarativeContent",
+    "tabs",
+    "https://access.redhat.com/support/cases/internal/#/ascension/case/"
+  ],
+  "icons" : {
+    "48" : "LetterA-48.png",
+    "128" : "LetterA-128.png"
+  },
+
+  "manifest_version": 2
+}
