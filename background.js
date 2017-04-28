@@ -8,10 +8,6 @@ chrome.runtime.onInstalled.addListener(function() {
           // Enable button only for those urls that are CSP or salesforce
         // regex is    .na7.visual.force.com.|access.redhat.com(?!.*ascension).*$
 
-//          new chrome.declarativeContent.PageStateMatcher({
-//            pageUrl: { urlMatches: '(.na7.visual.force.com.|access.redhat.com.)(?!ascension)' }
-//          })
-
           new chrome.declarativeContent.PageStateMatcher({
             pageUrl: { urlContains: 'visual.force.com/apex/Case_View' }
           }),
