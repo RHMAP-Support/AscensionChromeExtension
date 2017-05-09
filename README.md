@@ -1,2 +1,2 @@
-Chrome extension to open a Salesforce / SUpport portal case in Ascension
+Chrome extension to open a Salesforce / Support portal case in Ascension
 
